@@ -17,9 +17,9 @@ O projeto tem como objetivo demonstrar um sistema de biblioteca com as entidades
 
 O projeto possui a seguinte estrutura de pacotes:
 
-- `com.example.library.model`: Contém as classes de modelo, incluindo `Publicacao`, `Aluno` e `Empréstimo`.
-- O package dao: Contém as classes  DAO para acesso ao banco de dados.
-- `com.example.library.test`: Contém classes de teste para demonstrar as operações no banco de dados.
+- O package bancodados: Contém classes de teste para demonstrar as operações no banco de dados.
+- O package dao: Contém as classes AlunoDao, DAO, EprestimoDao,PublicacaoDao para acesso ao banco de dados.
+- O packge entidades:  Contém as classes de modelo, incluindo `Publicacao`, `Aluno` e `Empréstimo`.
 
 ## Configuração
 
@@ -30,10 +30,9 @@ Certifique-se de ter o Maven instalado em seu ambiente. O projeto usa o Maven pa
 Para executar o projeto, siga os passos abaixo:
 
 1. Clone este repositório Git em seu ambiente local.
-
-2. Certifique-se de que as configurações do banco de dados no arquivo `persistence.xml` estão corretas para o ambiente.
-
-3. Use o comando Maven para compilar e executar o projeto:
+2. Certifique-se de que o Banco de dados H2 esteja baixado no seu roost
+3. Certifique-se de que as configurações do banco de dados no arquivo `persistence.xml` estão corretas para o ambiente.
+4. Use o comando Maven para compilar e executar o projeto:
 
    ```shell
    mvn clean compile exec:java
